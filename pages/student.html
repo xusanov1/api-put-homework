@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="../css/student.css">
+</head>
+<body>
+     
+   <div id="container" class="container">
+     <div class="spinner-border" role="status">
+         <span class="visually-hidden">Loading...</span>
+     </div>
+
+     <button id="addBtn">Add student</button>
+     <form id="updateFrom">
+          <h1>Add student</h1>
+          <input type="text" placeholder="Name" id="name">
+          <input type="text" placeholder="email" id="email">
+          <button type="submit">Update</button>
+     </form>
+
+     <table>
+          <thead>
+               <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Email</td>
+               </tr>
+          </thead>
+          <tbody>
+               <tr id="row">
+               </tr>
+          </tbody>
+     </table>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script type="module" src="../script/student.js"></script>
+</body>
+</html>
